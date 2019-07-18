@@ -1,0 +1,18 @@
+/gps/particle	proton
+/gps/pos/type	Beam	 
+/gps/pos/shape	Circle	 
+/gps/pos/centre	0	0	-1	cm	 
+/gps/pos/radius	20	mm	 
+/gps/ang/type beam2d
+/gps/ang/rot1 -1 0 0
+/gps/ang/rot2 0 1 0
+/gps/pos/sigma_r	10	mm
+/gps/ene/type	Lin	 
+/gps/ene/min	78	MeV	
+/gps/ene/max	80	MeV	 
+/gps/ene/gradient	1	 
+/gps/ene/intercept	1	
+
+/tracking/verbose 0
+/run/beamOn 10
+
