@@ -4,7 +4,6 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ## Set up primary generaotr
-/control/execute primaryGeneratorSetup.mac
 
 ## Set up visulalization ennrionment
 /control/execute visSetup_Simplex.mac

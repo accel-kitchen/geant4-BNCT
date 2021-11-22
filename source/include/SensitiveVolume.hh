@@ -24,10 +24,11 @@ class G4Step;
       void EndOfEvent(G4HCofThisEvent*);
 private:
     G4double sum_eDep;
-    G4int no_Step;
+    G4int no_Step=0;
     G4int pre_copyNo;
     G4int water_flag;
-    G4int run_number;
+    G4int calorimeter_flag;
+    G4int run_number=0;
     json tracking;           
     json tracking2;  
 };
