@@ -34,6 +34,8 @@ using json = nlohmann::json;
   void SensitiveVolume::EndOfEvent(G4HCofThisEvent*)
 //------------------------------------------------------------------------------
 {
+  //next run number
+  run_number++;
 }
 
 //------------------------------------------------------------------------------
