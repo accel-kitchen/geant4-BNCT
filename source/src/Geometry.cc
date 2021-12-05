@@ -43,7 +43,7 @@ Block::Block(G4String name, G4double pos_X, G4double pos_Y, G4double pos_Z, G4do
                      false, copyNum);
     //Generate Local envelope of Water/co
    auto solid_BlockEnvL = new G4Box("Solid_BlockEnvL", size_X/2.0, size_Y/2.0, size_Z/nDiv_z/2.0);
-   auto materi_BlockEnvL = materi_Man->FindOrBuildMaterial("G4_WATER");
+   auto materi_BlockEnvL = materi_Man->FindOrBuildMaterial(materi);
    auto logVol_BlockEnvL = new G4LogicalVolume(solid_BlockEnvL, materi_BlockEnvL, "LogVol_BlockEnvL");
    logVol_BlockEnvL->SetVisAttributes (G4VisAttributes::Invisible);
    new G4PVReplica("PhysVol_BlockEnvL", logVol_BlockEnvL, logVol_BlockEnvG, kZAxis, nDiv_z, size_Z/nDiv_z); 
@@ -75,10 +75,11 @@ Block::Block(G4String name, G4double pos_X, G4double pos_Y, G4double pos_Z, G4do
 
 
   /////// put volumess in the world
-Block Block1("Block1", 0.0 * cm, 0.0 * cm, 20 * cm, 20* mm, 20 * mm, 100 * mm, 1 ,1000, "G4_WATER" ,physVol_World); 
+
 //arguments are follows:
 // name, pos_X, pos_Y, pos_Z, size_X, size_Y, size_Z, copyNum, nDiv_z, material ,physVol_World
-
+Block Block1("Block1", 0.0 * cm, 0.0 * cm, 50 * cm, 20* mm, 20 * mm, 20 * mm, 1 ,1000, "G4_WATER" ,physVol_World); 
+Block Block2("Block2", 0.0 * cm, 0.0 * cm, 20 * cm, 10* mm, 10 * mm, 10 * mm, 1 ,1000, "G4_WATER" ,physVol_World); 
 
 
 
