@@ -78,8 +78,7 @@ Block::Block(G4String name, G4double pos_X, G4double pos_Y, G4double pos_Z, G4do
 
 //arguments are follows:
 // name, pos_X, pos_Y, pos_Z, size_X, size_Y, size_Z, copyNum, nDiv_z, material ,physVol_World
-Block Block1("Block1", 0.0 * cm, 0.0 * cm, 50 * cm, 20* mm, 20 * mm, 20 * mm, 1 ,1000, "G4_WATER" ,physVol_World); 
-Block Block2("Block2", 0.0 * cm, 0.0 * cm, 20 * cm, 10* mm, 10 * mm, 10 * mm, 1 ,1000, "G4_WATER" ,physVol_World); 
+Block Block1("Block1", 0.0 * cm, 0.0 * cm, 20 * cm, 20* mm, 20 * mm, 100 * mm, 1 ,1000, "G4_WATER" ,physVol_World); 
 
 
 
