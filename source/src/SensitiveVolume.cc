@@ -78,9 +78,8 @@ if(aStep->GetTrack()->GetTrackStatus()!=fAlive) return false;
 
  
         std::ofstream o2("tracking.dat",std::ios::app);
-if (nTrack==0){
-      o2 << std::setw(4) << run_number << "\t" << copyNo <<"\t" << time <<"\t" << kE << "\t" << position_World.x()  << "\t"  << position_World.y()  << "\t"  << position_World.z()  << "\t"  << edep << std::endl;
-}
+
+      o2 << std::setw(4) << run_number << "\t" << copyNo <<"\t" << time <<"\t" << kE << "\t" << position_World.x()  << "\t"  << position_World.y()  << "\t"  << position_World.z()  << "\t"  << edep  << "\t" << particleName   << "\t" << nTrack << std::endl;
 
 
   return true;
